@@ -2,7 +2,9 @@ import uiautomator2
 
 def device_init(app_id, restart=False):
     device = connect_device(restart)
-    sess = startApp(device, app_id, restart)
+    # device.unlock()
+    # sess = startApp(device, app_id, restart)
+    sess = ''
     return device, sess
 
 def connect_device(restart):

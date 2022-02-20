@@ -1,6 +1,6 @@
 import uiautomator2
 from random import uniform
-from utils import *
+from dgfbot.utils import COLOR_REPORT, COLOR_ENDC, COLOR_FAIL
 from time import sleep
 from enum import Enum, unique
 from typing import Optional
