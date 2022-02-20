@@ -13,7 +13,7 @@ def connect_device(restart):
     except Exception as err:
         print(f'\nError: {err}')
 
-def startApp(device, app_id, forceRestart):
+def startApp(device, app_id, forceRestart=False):
     if forceRestart:
         device.app_stop_all()
         device.app_start(app_id)
